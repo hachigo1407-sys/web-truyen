@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tìm truyện - WebTruyen</title>
+    <title>Truyện Tình Cảm - WebTruyen</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
@@ -26,7 +26,7 @@
                     </div>
                     <div class="col-md-5 col-lg-6">
                         <div class="search-box position-relative">
-                            <input type="text" placeholder="Tìm truyện..." class="form-control search-input" id="mainSearch" value="">
+                            <input type="text" placeholder="Tìm truyện..." class="form-control search-input">
                             <button class="btn search-btn position-absolute end-0 top-50 translate-middle-y me-2">
                                 <i class="fas fa-search"></i>
                             </button>
@@ -69,8 +69,7 @@
                                 <li><a class="dropdown-item" href="kinh-di.html">Kinh dị</a></li>
                             </ul>
                         </li>
-                     
-                        <li class="nav-item"><a href="tim-truyen.html" class="nav-link active"><i class="fas fa-search me-1"></i>Tìm truyện</a></li>
+                        <li class="nav-item"><a href="tim-truyen.html" class="nav-link"><i class="fas fa-search me-1"></i>Tìm truyện</a></li>
                         <li class="nav-item"><a href="con-gai.html" class="nav-link"><i class="fas fa-female me-1"></i>Con gái</a></li>
                         <li class="nav-item"><a href="con-trai.html" class="nav-link"><i class="fas fa-male me-1"></i>Con trai</a></li>
                     </ul>
@@ -85,83 +84,29 @@
             <!-- Page Header -->
             <div class="page-header mb-4">
                 <h1 class="mb-2">
-                    <i class="fas fa-search text-primary me-2"></i>Tìm truyện
+                    <i class="fas fa-heart text-danger me-2"></i>Truyện Tình Cảm
                 </h1>
-                <p class="text-muted mb-0">Tìm kiếm truyện tranh theo tên, tác giả hoặc thể loại</p>
+                <p class="text-muted mb-0">Tuyển tập truyện tranh thể loại tình cảm</p>
             </div>
 
-            <!-- Search Filters -->
-            <section class="search-filters mb-4">
-                <div class="card shadow-sm">
-                    <div class="card-body">
-                        <div class="row g-3 align-items-end">
-                            <div class="col-md-6">
-                                <label class="form-label fw-bold">
-                                    <i class="fas fa-filter me-2"></i>Lọc theo thể loại
-                                </label>
-                                <div class="d-flex flex-wrap gap-2">
-                                    <input type="checkbox" class="btn-check" id="filter-all" checked>
-                                    <label class="btn btn-outline-primary btn-sm" for="filter-all">Tất cả</label>
-                                    <input type="checkbox" class="btn-check" id="filter-action">
-                                    <label class="btn btn-outline-primary btn-sm" for="filter-action">Hành động</label>
-                                    <input type="checkbox" class="btn-check" id="filter-romance">
-                                    <label class="btn btn-outline-primary btn-sm" for="filter-romance">Tình cảm</label>
-                                    <input type="checkbox" class="btn-check" id="filter-comedy">
-                                    <label class="btn btn-outline-primary btn-sm" for="filter-comedy">Hài hước</label>
-                                    <input type="checkbox" class="btn-check" id="filter-horror">
-                                    <label class="btn btn-outline-primary btn-sm" for="filter-horror">Kinh dị</label>
-                                    <input type="checkbox" class="btn-check" id="filter-fantasy">
-                                    <label class="btn btn-outline-primary btn-sm" for="filter-fantasy">Fantasy</label>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <label class="form-label fw-bold">
-                                    <i class="fas fa-sort me-2"></i>Sắp xếp
-                                </label>
-                                <select class="form-select">
-                                    <option>Mới nhất</option>
-                                    <option>Lượt xem nhiều</option>
-                                    <option>Đánh giá cao</option>
-                                    <option>A-Z</option>
-                                </select>
-                            </div>
-                            <div class="col-md-3">
-                                <label class="form-label fw-bold">
-                                    <i class="fas fa-list me-2"></i>Hiển thị
-                                </label>
-                                <select class="form-select">
-                                    <option>12 truyện/trang</option>
-                                    <option>24 truyện/trang</option>
-                                    <option>48 truyện/trang</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Search Results -->
-            <section class="search-results">
-                <div class="d-flex justify-content-between align-items-center mb-4">
-                    <h2 class="section-title mb-0">
-                        Kết quả tìm kiếm: <span class="text-primary" id="searchTerm">Tất cả truyện</span>
-                    </h2>
-                    <span class="badge bg-primary fs-6">Tìm thấy 24 truyện</span>
-                </div>
+            <!-- Featured Section -->
+            <section class="featured-section mb-5">
                 <div class="row g-4">
                     <div class="col-6 col-sm-4 col-md-3 col-lg-2">
                         <div class="comic-card h-100">
                             <a href="#" class="comic-image position-relative d-block mb-3 rounded-3 overflow-hidden">
                                 <img src="img/toi-ac-chi-thanh.jpg" alt="Tội Ác Chi Thành" class="img-fluid w-100">
+                                <div class="comic-overlay position-absolute top-0 end-0 m-2">
+                                    <span class="badge bg-success">Đang cập nhật</span>
+                                </div>
                             </a>
                             <div class="comic-info">
                                 <h6 class="comic-title mb-2">
                                     <a href="#" class="text-decoration-none">Tội Ác Chi Thành</a>
                                 </h6>
-                                <a href="#" class="comic-chapter text-primary text-decoration-none d-block mb-2 small">Chapter 100</a>
+                                <a href="#" class="comic-chapter text-primary text-decoration-none d-block mb-2 small">Chapter 300</a>
                                 <div class="comic-meta text-muted small">
-                                    <i class="fas fa-star text-warning me-1"></i>4.8
-                                    <span class="ms-2"><i class="fas fa-eye me-1"></i>50K</span>
+                                    <i class="far fa-clock me-1"></i>1 ngày trước
                                 </div>
                             </div>
                         </div>
@@ -171,15 +116,17 @@
                         <div class="comic-card h-100">
                             <a href="#" class="comic-image position-relative d-block mb-3 rounded-3 overflow-hidden">
                                 <img src="img/ta-co-the-don-ngo-vo-han.jpg" alt="Ta Có Thể Đốn Ngộ Vô Hạn" class="img-fluid w-100">
+                                <div class="comic-overlay position-absolute top-0 end-0 m-2">
+                                    <span class="badge bg-success">Đang cập nhật</span>
+                                </div>
                             </a>
                             <div class="comic-info">
                                 <h6 class="comic-title mb-2">
                                     <a href="#" class="text-decoration-none">Ta Có Thể Đốn Ngộ Vô Hạn</a>
                                 </h6>
-                                <a href="#" class="comic-chapter text-primary text-decoration-none d-block mb-2 small">Chapter 99</a>
+                                <a href="#" class="comic-chapter text-primary text-decoration-none d-block mb-2 small">Chapter 250</a>
                                 <div class="comic-meta text-muted small">
-                                    <i class="fas fa-star text-warning me-1"></i>4.6
-                                    <span class="ms-2"><i class="fas fa-eye me-1"></i>45K</span>
+                                    <i class="far fa-clock me-1"></i>2 ngày trước
                                 </div>
                             </div>
                         </div>
@@ -189,15 +136,17 @@
                         <div class="comic-card h-100">
                             <a href="#" class="comic-image position-relative d-block mb-3 rounded-3 overflow-hidden">
                                 <img src="img/van-co-chi-ton.jpg" alt="Vạn Cổ Chí Tôn" class="img-fluid w-100">
+                                <div class="comic-overlay position-absolute top-0 end-0 m-2">
+                                    <span class="badge bg-success">Đang cập nhật</span>
+                                </div>
                             </a>
                             <div class="comic-info">
                                 <h6 class="comic-title mb-2">
                                     <a href="#" class="text-decoration-none">Vạn Cổ Chí Tôn</a>
                                 </h6>
-                                <a href="#" class="comic-chapter text-primary text-decoration-none d-block mb-2 small">Chapter 200</a>
+                                <a href="#" class="comic-chapter text-primary text-decoration-none d-block mb-2 small">Chapter 400</a>
                                 <div class="comic-meta text-muted small">
-                                    <i class="fas fa-star text-warning me-1"></i>4.9
-                                    <span class="ms-2"><i class="fas fa-eye me-1"></i>60K</span>
+                                    <i class="far fa-clock me-1"></i>3 ngày trước
                                 </div>
                             </div>
                         </div>
@@ -207,15 +156,17 @@
                         <div class="comic-card h-100">
                             <a href="#" class="comic-image position-relative d-block mb-3 rounded-3 overflow-hidden">
                                 <img src="img/quy-tien-hoa.jpg" alt="Quỷ Tiến Hóa" class="img-fluid w-100">
+                                <div class="comic-overlay position-absolute top-0 end-0 m-2">
+                                    <span class="badge bg-success">Đang cập nhật</span>
+                                </div>
                             </a>
                             <div class="comic-info">
                                 <h6 class="comic-title mb-2">
                                     <a href="#" class="text-decoration-none">Quỷ Tiến Hóa</a>
                                 </h6>
-                                <a href="#" class="comic-chapter text-primary text-decoration-none d-block mb-2 small">Chapter 150</a>
+                                <a href="#" class="comic-chapter text-primary text-decoration-none d-block mb-2 small">Chapter 350</a>
                                 <div class="comic-meta text-muted small">
-                                    <i class="fas fa-star text-warning me-1"></i>4.7
-                                    <span class="ms-2"><i class="fas fa-eye me-1"></i>40K</span>
+                                    <i class="far fa-clock me-1"></i>4 ngày trước
                                 </div>
                             </div>
                         </div>
@@ -225,15 +176,17 @@
                         <div class="comic-card h-100">
                             <a href="#" class="comic-image position-relative d-block mb-3 rounded-3 overflow-hidden">
                                 <img src="img/cam-kiem-tuyet-doi.jpg" alt="Cảm Kiếm Tuyệt Đối" class="img-fluid w-100">
+                                <div class="comic-overlay position-absolute top-0 end-0 m-2">
+                                    <span class="badge bg-info">Hoàn thành</span>
+                                </div>
                             </a>
                             <div class="comic-info">
                                 <h6 class="comic-title mb-2">
                                     <a href="#" class="text-decoration-none">Cảm Kiếm Tuyệt Đối</a>
                                 </h6>
-                                <a href="#" class="comic-chapter text-primary text-decoration-none d-block mb-2 small">Chapter 120</a>
+                                <a href="#" class="comic-chapter text-primary text-decoration-none d-block mb-2 small">Chapter 320</a>
                                 <div class="comic-meta text-muted small">
-                                    <i class="fas fa-star text-warning me-1"></i>4.5
-                                    <span class="ms-2"><i class="fas fa-eye me-1"></i>35K</span>
+                                    <i class="far fa-clock me-1"></i>5 ngày trước
                                 </div>
                             </div>
                         </div>
@@ -243,15 +196,17 @@
                         <div class="comic-card h-100">
                             <a href="#" class="comic-image position-relative d-block mb-3 rounded-3 overflow-hidden">
                                 <img src="img/dai-phung-da-canh-nhan.jpg" alt="Đại Phụng Đả Canh Nhân" class="img-fluid w-100">
+                                <div class="comic-overlay position-absolute top-0 end-0 m-2">
+                                    <span class="badge bg-success">Đang cập nhật</span>
+                                </div>
                             </a>
                             <div class="comic-info">
                                 <h6 class="comic-title mb-2">
                                     <a href="#" class="text-decoration-none">Đại Phụng Đả Canh Nhân</a>
                                 </h6>
-                                <a href="#" class="comic-chapter text-primary text-decoration-none d-block mb-2 small">Chapter 80</a>
+                                <a href="#" class="comic-chapter text-primary text-decoration-none d-block mb-2 small">Chapter 280</a>
                                 <div class="comic-meta text-muted small">
-                                    <i class="fas fa-star text-warning me-1"></i>4.4
-                                    <span class="ms-2"><i class="fas fa-eye me-1"></i>30K</span>
+                                    <i class="far fa-clock me-1"></i>6 ngày trước
                                 </div>
                             </div>
                         </div>
